@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 if(odometerService != null){
                     distance = odometerService.getDistanceTravelled();
                 }
-                String stringDistance = String.format("%1$,.2f miles", distance);
+                String stringDistance = String.format("%1$,.2f meters", distance);
                 distanceView.setText(stringDistance);
                 handler.postDelayed(this, 1000);
             }
